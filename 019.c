@@ -14,13 +14,13 @@
 
 void motorLoop() {
 	startMotor(motor_left, 63);
-	delay(2);
+	wait(2);
 	stopMotor(motor_left);
 	startMotor(motor_right);
-	delay(2);
+	wait(2);
 	stopMotor(motor_right);
 	turnLEDOn(LED);
-	delay(3);
+	wait(3);
 	turnLEDOff(LED);
 }
 

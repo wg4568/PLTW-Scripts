@@ -14,7 +14,7 @@
 
 task main() {
 	turnLEDOn(LED);
-	delay(1);
+	wait(1);
 	turnLEDOff(LED);
 	delay(1);
 	turnLEDOn(LED);

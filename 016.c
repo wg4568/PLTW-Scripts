@@ -14,15 +14,14 @@
 
 task main() {
 	while (true) {
-		if (SensorValue[bump])
+		if (SensorValue[bump]) {
 			startMotor(motor_left, 63);
-		else
-			stopMotor(motor_left);
-
-		if (SensorValue[limit])
+		} else if (SensorValue[limit]) {
 			startMotor(motor_right, 63);
-		else
+		} else {
 			stopMotor(motor_left);
+			stopMotor(motor_right);
+		}
 
 		if (SensorValue[photoresistor] > 500)
 			turnFlashlightOn(flashlight, 127);

@@ -26,6 +26,6 @@ task main() {
 		delay(3);
 		turnLEDOff(LED);
 
-		count *= (int)(((float)count + 1) / (float)count); // increment count by a factor of count plus one over count itself, by casting count to a float and then back to an integer
+		count++;
 	}
 }
