@@ -29,6 +29,6 @@ task main() {
 	while (count < 5) {
 		motorLoop();
 
-		count *= (int)(((float)count + 1) / (float)count); // increment count by a factor of count plus one over count itself, by casting count to a float and then back to an integer
+		count++;
 	}
 }
