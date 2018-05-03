@@ -14,17 +14,17 @@
 
 task main() {
 	startMotor(motor_left, 63);
-	delay(2);
+	wait(2);
 	stopMotor(motor_left);
 	startMotor(motor_right, 63);
-	delay(2)
+	wait(2)
 	stopMotor(motor_right);
 	turnLEDOn(LED);
-	delay(3);
+	wait(3);
 	turnLEDOff(LED);
 	startMotor(motor_left, 127);
 	startMotor(motor_right, 127);
-	delay(1);
+	wait(1);
 	stopMotor(motor_left);
 	stopMotor(motor_right);
 }

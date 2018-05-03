@@ -16,12 +16,12 @@ task main() {
 	startMotor(motor_right, 63);
 	untilBump(bump);
 	stopMotor(motor_right);
-	delay(2);
+	wait(2);
 	setServo(servo, 60);
-	delay(2)
+	wait(2)
 	untilBump(limit);
 	setServo(servo, 0);
-	delay(2);
+	wait(2);
 	startMotor(motor_left, 63);
 	untilEncoderCounts(400, encoder);
 	stopMotor(motor_left);
